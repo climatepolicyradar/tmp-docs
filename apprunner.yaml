@@ -8,9 +8,4 @@ run:
   runtime-version: 3.11
   pre-run:
     - pip3 install -r requirements.txt
-  command: fastapi run app/main.py --port 8080
-  network:
-    port: 8080
-  env:
-    - name: NAVIGATOR_DATABASE_URL
-      value: postgresql://navigator:navigator@localhost/navigator
+  command: echo "Hello, World!"
