@@ -2,8 +2,8 @@
 
 # from fastapi import APIRouter, Depends, FastAPI
 from fastapi import APIRouter, FastAPI
+from pydantic_settings import BaseSettings
 
-# from pydantic_settings import BaseSettings
 # from sqlalchemy import create_engine
 # from sqlmodel import Field, Relationship, Session, SQLModel, func, select
 

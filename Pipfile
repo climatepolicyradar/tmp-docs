@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 annotated-types = "==0.7.0"
 fastapi = {extras = ["standard"], version = "*"}
+pydantic-settings = "*"
 
 [dev-packages]
 
