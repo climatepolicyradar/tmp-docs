@@ -221,7 +221,7 @@ def get_settings():
 
 
 @router.get("/health")
-def health_check(settings: Settings = Depends(get_settings)):
+def health_check():
     return {
         "status": "ok",
     }
