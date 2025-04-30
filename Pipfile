@@ -9,6 +9,7 @@ fastapi = {extras = ["standard"], version = "*"}
 pydantic-settings = "*"
 sqlmodel = "*"
 psycopg2 = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
