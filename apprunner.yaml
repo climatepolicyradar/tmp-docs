@@ -8,4 +8,6 @@ run:
   runtime-version: 3.11
   pre-run:
     - pip3 install -r requirements.txt
-  command: echo "Hello, World!"
+  command:
+    - echo "Hello, World!"
+    - fastapi run app/main.py --port 8080
