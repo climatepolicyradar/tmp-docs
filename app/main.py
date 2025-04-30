@@ -132,8 +132,8 @@ from pydantic_settings import BaseSettings
 #     page_size: int
 
 
-# class Settings(BaseSettings):
-#     navigator_database_url: str
+class Settings(BaseSettings):
+    navigator_database_url: str
 
 
 # settings = Settings()
