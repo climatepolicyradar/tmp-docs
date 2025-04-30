@@ -144,6 +144,11 @@ router = APIRouter(
 )
 app = FastAPI()
 
+
+def get_settings():
+    return Settings()
+
+
 # navigator_engine = create_engine(settings.navigator_database_url)
 
 
@@ -216,8 +221,11 @@ app = FastAPI()
 
 
 @router.get("/health")
-def health_check():
-    return {"status": "ok"}
+def health_check(settings: Settings = Depends(get_settings)):
+    return {
+        "status": "ok",
+        "navigator_database_url": settings.navigator_database_url,
+    }
 
 
 app.include_router(router)
