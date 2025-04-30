@@ -224,7 +224,6 @@ def get_settings():
 def health_check(settings: Settings = Depends(get_settings)):
     return {
         "status": "ok",
-        "navigator_database_url": settings.navigator_database_url,
     }
 
 
