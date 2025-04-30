@@ -1,7 +1,7 @@
 # from typing import Generic, Optional, TypeVar
 
 # from fastapi import APIRouter, Depends, FastAPI
-from fastapi import APIRouter, FastAPI
+from fastapi import APIRouter, Depends, FastAPI
 from pydantic_settings import BaseSettings
 
 # from sqlalchemy import create_engine
