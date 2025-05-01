@@ -1,1 +1,33 @@
 # documents-api
+
+## Decisions made
+
+### Local development
+
+**`just dev`**
+
+- [ ] To run the service locally, you should run `just dev`
+- [ ] We use docker compose to start up local services
+- [ ] For python code, we should also be able to run the framework's (FastAPI) native dev environment (`fastapi dev app/main.py`)
+- [ ] Data for seeing the service locally should be pre-loaded and prod-like
+- [ ] Any changes to code shoud be reflected immediately in the running service, no reloads needed
+
+**`just test`**
+
+- [ ] All tests should run when running `just test`
+- [ ] Testing should be stateless and predictable at every run
+- [ ] Tests should run the same locally and in CI
+- [ ] Local tests should run on a watch
+
+**`just build`**
+
+**`just deploy`**
+
+- [ ] the `main` branch will always be what's on production
+
+## TODO
+
+### Infra (things added manually)
+
+- apprunner
+- ecr repo

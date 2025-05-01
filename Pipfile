@@ -8,8 +8,8 @@ annotated-types = "==0.7.0"
 fastapi = {extras = ["standard"], version = "*"}
 pydantic-settings = "*"
 sqlmodel = "*"
-psycopg2 = "*"
 psycopg2-binary = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

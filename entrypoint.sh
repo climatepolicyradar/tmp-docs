@@ -1,4 +1,4 @@
 #!/bin/sh
 echo "Hello entrypoint 111!"
 pip3 install -r requirements.txt
-fastapi run ./app/main.py --port 8080
+fastapi run ./app/main.py --port 8888
