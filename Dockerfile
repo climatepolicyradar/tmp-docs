@@ -16,4 +16,4 @@ COPY ./app /app
 COPY ./entrypoint.sh /entrypoint.sh
 EXPOSE 8888
 RUN chmod +x /entrypoint.sh
-CMD ["./entrypoint.sh"]
+CMD ["echo", "Hello Dockerfile 222!"]
