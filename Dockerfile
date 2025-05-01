@@ -1,19 +1,2 @@
-FROM python:3.11-slim
-
-WORKDIR /
-
-# Install system dependencies required for psycopg2
-RUN apt-get update && apt-get install -y \
-    gcc \
-    libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY ./requirements.txt /requirements.txt
-RUN pip install --no-cache-dir --upgrade -r /requirements.txt
-
-COPY ./app /app
-
-COPY ./entrypoint.sh /entrypoint.sh
-EXPOSE 8888
-RUN chmod +x /entrypoint.sh
-CMD ["echo", "Hello Dockerfile 222!"]
+FROM alpine:latest
+CMD ["sh", "-c", "echo It works && sleep 300"]
