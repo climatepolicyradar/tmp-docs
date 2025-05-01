@@ -11,7 +11,7 @@ docker-run:
     docker run -p 8888:8888 -e NAVIGATOR_DATABASE_URL=postgresql://navigator:navigator@localhost/navigator documents-api
 
 docker-build:
-    docker build . -t documents-api:latest
+    docker buildx build --platform linux/amd64 -t documents-api:latest .
 
 docker-push:
     docker tag documents-api:latest $(aws sts get-caller-identity --query 'Account' --output text --profile $AWS_PROFILE).dkr.ecr.eu-west-1.amazonaws.com/documents-api:latest
