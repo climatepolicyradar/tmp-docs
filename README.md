@@ -1,6 +1,6 @@
 # documents-api
 
-## Decisions made
+## Decisions checklist
 
 ### Local development
 
