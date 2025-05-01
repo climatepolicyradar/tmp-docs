@@ -14,4 +14,5 @@ RUN pip install --no-cache-dir --upgrade -r /requirements.txt
 COPY ./app /app
 
 COPY ./entrypoint.sh /entrypoint.sh
+EXPOSE 8888
 CMD ["./entrypoint.sh"]
